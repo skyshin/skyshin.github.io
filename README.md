@@ -1,6 +1,6 @@
 # skyshin.github.io
 
-Bilingual (Korean / English) site for JongHo Shin's AI/ML/agent consulting for Korean companies doing business in the US.
+Bilingual (Korean / English) site for Seam AI Studio, an AI/ML/agent consulting practice for Korean companies doing business in the US.
 
 - `index.html` — the whole site. Every visible text has a Korean `<span lang="ko">` and English `<span lang="en">` pair; the toggle (or `?lang=en`) switches them.
 - `assets/css/site.css` — styles. Colors are tokens at the top of the file.

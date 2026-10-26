@@ -99,7 +99,7 @@ html[data-lang="en"] h1 { letter-spacing: -0.02em; }
 .creds dd { margin: 0; font-weight: 700; font-size: 15px; }
 
 /* Demo */
-.demo { margin: 0; display: grid; gap: 14px; }
+.demo { margin: 0; display: grid; gap: 14px; overflow-x: clip; overflow-clip-margin: 0; padding: 6px 4px; }
 .demo-doc {
   position: relative; background: #fbfbf8; border: 1px solid var(--line);
   padding: 18px 20px 20px; transform: rotate(-1.2deg);
@@ -233,4 +233,9 @@ details p { margin: 10px 0 0; color: var(--ink-2); }
   .bar-inner { gap: 12px; }
   .demo-doc { transform: none; }
   .brand-name { font-size: 15px; }
+  .brand { min-width: 0; }
+  .brand-name { overflow: hidden; text-overflow: ellipsis; }
+  .hero-grid, .demo, .demo-out { grid-template-columns: minmax(0, 1fr); }
+  .doc-lines, .demo-out { overflow-wrap: anywhere; }
+  h1 { overflow-wrap: anywhere; }
 }
